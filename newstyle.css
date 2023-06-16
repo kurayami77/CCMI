@@ -59,11 +59,63 @@ a{
     text-decoration: none;
 }
 /*COVER*/
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;/* viewport height*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90vh; /* viewport height */
+  background-image: url("ccmi.png");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden; /* Prevent content from overflowing */
+}
+
+#h11 {
+  font-size: 3em;
+  border-bottom: 2px solid purple;
+  border-right: 2px purple;
+  width: 800px;
+  text-align: center;
+  box-shadow: 4px 4px 5px grey;
+  margin-top: 10px; 
+  font-family: monospace;
+  color: #FDD835; /* Yellow text color */
+}
+
+hr {
+  margin: 20px auto;
+  color: #FDD835; /* Yellow color for the horizontal rule */
+  border: 3px solid #FDD835; /* Yellow color for the border */
+  max-width: 65px;
+  opacity: 1;  
+}
+
+.buffer {
+  height: 10rem;
+}
+
+.btn {
+  color: black; 
+  font-weight: 700;
+  border-radius: 300px;
+  text-transform: uppercase;
+}
+
+.btn-primary {  
+  background-color: #FDD835; /* Yellow background for the primary button */
+  border-color: #FDD835;   
+  --bs-btn-hover-bg: #FDD835; 
+  --bs-btn-hover-border-color: #FDD835;
+}
+
+.btn-primary:hover {
+  background-color: #FFEB3B; /* Lighter yellow background on hover */
+  border-color: #FFEB3B;
+  border-width: 4px;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
 }
 
 /* GRID */
@@ -103,9 +155,9 @@ footer {
 /***********************************************************************
  *  Red Background
  **********************************************************************/
-.red{
+/*.red{
    background-image:"ccmi.png";
-}
+}*/
 
 /***********************************************************************
  *  Yellow Background
