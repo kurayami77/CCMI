@@ -1,121 +1,130 @@
-/* removes margi-n at top of page defualted by chrome*/
-body{
+ /* removes margin at top of page defualted by chrome */
+body {
     margin: auto 0;
     font-family: arial;
 }
 
 .zone {
-    cursor:pointer;
-    color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 2em;
+    border-radius: 4px;
+    border: 1px solid #bbb;
     transition: all 0.3s linear;
 }
+
 .zone:hover {
-    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px, inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
 }
 
 .box:hover {
     -webkit-transform: rotate(-7deg);
     -moz-transform: rotate(-7deg);
-    -o-transform:rotate(-7deg)
+    -o-transform: rotate(-7deg);
     transform: rotate(-7deg);
 }
 
-.sticky{
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
 }
 
-.main-nav{
+.main-nav {
     display: flex;
-    list-style: none; 
+    list-style: none;
     font-size: 0.7em;
     margin: 0;
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width: 600px) {
     .main-nav {
-        font-size:0.5em;
+        font-size: 0.5em;
         padding: 0;
     }
 }
 
-.push{
+.push {
     margin-left: auto;
 }
 
-li{
+li {
     padding: 20px;
 }
 
-a{
+a {
     color: #f5f5f6;
     text-decoration: none;
 }
-/*COVER*/
+
+/* COVER */
 .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 90vh; /* viewport height */
-  background-image: url("ccmi.png");
-  background-size: cover;
-  background-position: center;
-  overflow: hidden; /* Prevent content from overflowing */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 105vh; /* viewport height */
+    background-image: url("ccmi.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.container h2 {
+    margin: 0;
 }
 
 #h11 {
-  font-size: 3em;
-  border-bottom: 2px solid purple;
-  border-right: 2px purple;
-  width: 800px;
-  text-align: center;
-  box-shadow: 4px 4px 5px grey;
-  margin-top: 10px; 
-  font-family: monospace;
-  color: #FDD835; /* Yellow text color */
+    font-size: 3em;
+    border-bottom: 2px solid purple;
+    border-right: 2px purple;
+    width: 800px;
+    text-align: center;
+    box-shadow: 4px 4px 5px grey;
+    margin-top: 10px;
+    font-family: monospace;
+    color: #FDD835; /* Yellow text color */
 }
 
 hr {
-  margin: 20px auto;
-  color: #FDD835; /* Yellow color for the horizontal rule */
-  border: 3px solid #FDD835; /* Yellow color for the border */
-  max-width: 65px;
-  opacity: 1;  
+    margin: 20px auto;
+    color: #FDD835; /* Yellow color for the horizontal rule */
+    border: 3px solid #FDD835; /* Yellow color for the border */
+    max-width: 65px;
+    opacity: 1;
 }
 
 .buffer {
-  height: 10rem;
+    height: 10rem;
 }
 
 .btn {
-  color: black; 
-  font-weight: 700;
-  border-radius: 300px;
-  text-transform: uppercase;
+    color: black;
+    font-weight: 700;
+    border-radius: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
-.btn-primary {  
-  background-color: #FDD835; /* Yellow background for the primary button */
-  border-color: #FDD835;   
-  --bs-btn-hover-bg: #FDD835; 
-  --bs-btn-hover-border-color: #FDD835;
+.btn-primary {
+    background-color: #FDD835; /* Yellow background for the primary button */
+    border-color: #FDD835;
+    --bs-btn-hover-bg: #FDD835;
+    --bs-btn-hover-border-color: #FDD835;
 }
 
 .btn-primary:hover {
-  background-color: #FFEB3B; /* Lighter yellow background on hover */
-  border-color: #FFEB3B;
-  border-width: 4px;
+    background-color: #FFEB3B; /* Lighter yellow background on hover */
+    border-color: #FFEB3B;
+    border-width: 4px;
 }
 
 .btn-xl {
-  padding: 1rem 2rem;
+   padding: 1rem 2rem;
 }
 
 /* GRID */
@@ -138,18 +147,20 @@ hr {
 footer {
     text-align: center;
 }
-/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+
+/* Shiny CSS Buttons */
+
 /***********************************************************************
  *  Green Background
  **********************************************************************/
-.green{
+.green {
     background: #56B870; /* Old browsers */
     background: -moz-linear-gradient(top, #56B870 0%, #a5c956 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#56B870), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #56B870 0%,#a5c956 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #56B870 0%,#a5c956 100%); /* IE10+ */
-    background: linear-gradient(top, #56B870 0%,#a5c956 100%); /* W3C */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #56B870), color-stop(100%, #a5c956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #56B870 0%, #a5c956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #56B870 0%, #a5c956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #56B870 0%, #a5c956 100%); /* IE10+ */
+    background: linear-gradient(top, #56B870 0%, #a5c956 100%); /* W3C */
 }
 
 /***********************************************************************
@@ -162,25 +173,25 @@ footer {
 /***********************************************************************
  *  Yellow Background
  **********************************************************************/
-.yellow{
+.yellow {
     background: #F3AAAA; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
-    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #F3AAAA), color-stop(100%, #febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* W3C */
 }
 
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
-.blue{
+.blue {
     background: #7abcff; /* Old browsers */
     background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
-    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #7abcff), color-stop(44%, #60abf8), color-stop(100%, #4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* W3C */
 }
